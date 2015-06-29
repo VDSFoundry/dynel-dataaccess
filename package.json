@@ -1,0 +1,39 @@
+{
+  "name": "dynel-oauth-client",
+  "version": "0.0.1",
+  "description": "Dynamic Elements OAuth Client Framework",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VDSFoundry/dynel-oauth-client.git"
+  },
+  "keywords": [
+    "dynel",
+    "dynel-oauth-client",
+    "dynamic-elements"
+  ],
+  "author": "Visual Data Solutions, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VDSFoundry/dynel-oauth-client/issues"
+  },
+  "homepage": "https://github.com/VDSFoundry/dynel-oauth-client",
+  "dependencies": {
+    "dynel-core": "*",
+    "dynel-data": "*"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "mocha": "^1.21.4",
+    "sinon": "^1.10.3"
+  }
+}
