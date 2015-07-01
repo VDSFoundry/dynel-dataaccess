@@ -8,15 +8,17 @@ var Model = require('dynel-data').Model;
 var DT = require('dynel-data').DataTypes;
 var IdentityClient = require('../lib/identityClient.js');
 
+var baseUrl = 'http://dynel-node.azurewebsites.net';
+
 describe('IdentityClient', function() {
     this.timeout(15000);
 
     it('should fire success on successful login', function(done) {
 
-        var client = new IdentityClient({baseUrl: 'http://localhost:58812'});
+        var client = new IdentityClient({baseUrl: baseUrl});
         client.authenticate({
-            username: 'geraldf',
-            password: 'P@ssw0rD',
+            username: 'admin',
+            password: 'password',
             context: this,
             success: function(token) {
                 console.log('token: ' + token);
@@ -31,10 +33,10 @@ describe('IdentityClient', function() {
 
     it('should fire error on unsuccessful login', function(done) {
 
-        var client = new IdentityClient({baseUrl: 'http://localhost:58812'});
+        var client = new IdentityClient({baseUrl: baseUrl});
         client.authenticate({
-            username: 'geraldf',
-            password: 'P@ssw0rD2',
+            username: 'admin',
+            password: 'password2',
             context: null,
             success: function(token) {
                 console.log('token: ' + token);
