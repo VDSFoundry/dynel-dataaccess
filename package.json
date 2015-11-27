@@ -1,6 +1,6 @@
 {
   "name": "dynel-oauth-client",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "description": "Dynamic Elements OAuth Client Framework",
   "main": "index.js",
   "directories": {
